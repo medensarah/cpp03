@@ -6,21 +6,21 @@
 #    By: smedenec <smedenec@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/09/29 18:43:01 by smedenec          #+#    #+#              #
-#    Updated: 2026/09/30 18:14:11 by smedenec         ###   ########.fr        #
+#    Updated: 2026/09/30 20:40:07 by smedenec         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Now_we_are_talking
+NAME = Aaaaand..._OPEN!
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp Fixed.cpp
+SRC = main.cpp ClapTrap.cpp
 OBJ = $(SRC:.cpp=.o)
 
 all: $(NAME)
 
-$(NAME): $(OBJ) Fixed.hpp
+$(NAME): $(OBJ) ClapTrap.hpp
 	$(CXX) $(CXXFLAGS) $(OBJ) -o $(NAME)
 
 clean:
